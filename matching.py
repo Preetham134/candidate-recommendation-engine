@@ -3,6 +3,8 @@ from huggingface_hub import login
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 import torch
 import re
+import streamlit as st 
+
 
 from pinecone_utils import get_or_create_index, upsert_resume_embedding, query_similar_resumes, clear_all_resumes
 from embedding_utils import get_embedding_model
@@ -94,3 +96,4 @@ def generate_batch_fit_summaries(candidates_data, job_description):
             summaries.append("Unable to generate summary.")
 
     return summaries
+
