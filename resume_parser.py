@@ -1,17 +1,5 @@
 import fitz  # PyMuPDF
 import spacy
-import spacy
-import subprocess
-import streamlit as st
-
-@st.cache_resource
-def get_spacy_model():
-    try:
-        return spacy.load("en_core_web_sm")
-    except OSError:
-        subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
-        return spacy.load("en_core_web_sm")
-
 
 def extract_text_from_pdf(file):
     doc = fitz.open(stream=file.read(), filetype="pdf")
@@ -21,7 +9,7 @@ def extract_text_from_pdf(file):
     return text.strip()
 
 def extract_candidate_name(resume_text):
-    nlp = get_spacy_model()
+    nlp = spacy.load("en_core_web_sm")
 
     lines = [line.strip() for line in resume_text.strip().split('\n') if line.strip()]
     section_keywords = {
