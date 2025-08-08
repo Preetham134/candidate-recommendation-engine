@@ -1,0 +1,12 @@
+streamlit
+sentence-transformers
+PyMuPDF
+scikit-learn
+spacy
+torch
+transformers
+huggingface_hub
+requests
+langchain_community
+accelerate
+pinecone
