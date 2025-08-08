@@ -1,3 +1,6 @@
+![App Preview](https://github.com/Preetham134/candidate-recommendation-engine/blob/main/Engine.png)
+![App Preview](https://github.com/Preetham134/candidate-recommendation-engine/blob/main/Summaries.png)
+
 # 🔍 Candidate Recommendation Engine
 
 A powerful AI-powered web application that takes in a **Job Description** and multiple **PDF Resumes**, and returns the **Top Matching Candidates** ranked by semantic relevance, along with **LLM-generated fit summaries**. Built using `Streamlit`, `Sentence Transformers`, `LLaMA 3`, and `Pinecone`.
