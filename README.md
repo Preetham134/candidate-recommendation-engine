@@ -140,15 +140,6 @@ streamlit run app.py
 - **Pinecone**: Add your API key to `pinecone_utils.py`.
 - **Hugging Face**: Add your token inside `matching.py`.
 
-### 🌐 Ngrok (for public sharing)
-```bash
-pip install pyngrok
-ngrok http 8501
-```
-
-> Then share the generated public URL.
-
----
 
 ## 📦 Requirements
 
