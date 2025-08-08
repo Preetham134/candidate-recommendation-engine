@@ -1,14 +1,12 @@
 streamlit
 sentence-transformers
-pymupdf
+PyMuPDF
 scikit-learn
+spacy
 torch
 transformers
 huggingface_hub
 requests
 langchain_community
 accelerate
-pinecone-client
-spacy==3.5.4
-blis==0.7.9
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0-py3-none-any.whl
+pinecone
