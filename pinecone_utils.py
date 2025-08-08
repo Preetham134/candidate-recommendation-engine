@@ -1,5 +1,7 @@
 import os
 from pinecone import Pinecone, ServerlessSpec
+import streamlit as st 
+
 
 PINECONE_API_KEY = st.secrets["PINECONE_API_KEY"]
 
@@ -39,3 +41,4 @@ def clear_all_resumes(index):
         time.sleep(2)
     except Exception as e:
         print(f"Error clearing index: {e}")
+
