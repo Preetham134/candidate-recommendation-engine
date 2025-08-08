@@ -143,6 +143,7 @@ streamlit run app.py
 
 > ⚠️ **Note on Hosting**:
 - Attempted hosting on **Streamlit Cloud**, but faced issues with **dependency resolution failures** (e.g., PyTorch, HuggingFace models).
+  Link: https://candidate-recommendation-engine-ngs2xkgms66oatrwtalkbo.streamlit.app/
 - Tried other online providers, but **RAM limitations** (e.g., <4GB) were insufficient for LLaMA inference and embedding generation.
 - **Local usage** with adequate memory and internet is currently **recommended**.
 
